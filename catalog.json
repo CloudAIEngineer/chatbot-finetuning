@@ -1,0 +1,112 @@
+{
+  "stocks": {
+    "1": {
+      "city": "New York",
+      "delivery_condition": "Delivery in 3-5 business days."
+    },
+    "2": {
+      "city": "Los Angeles",
+      "delivery_condition": "Delivery in 5-7 business days."
+    },
+    "3": {
+      "city": "Chicago",
+      "delivery_condition": "Delivery in 8-10 business days."
+    }
+  },
+  "return_policies": {
+    "1": "Returns accepted within 30 days of purchase.",
+    "2": "Returns accepted within 15 days of purchase."
+  },
+  "products": [
+    {
+      "id": 1,
+      "name": "Fitness Dumbbells 2kg",
+      "description": "Set of two vinyl dumbbells, perfect for home workouts.",
+      "price": "$19.99",
+      "stock": 1,
+      "return_policy": 1,
+      "category": "Fitness"
+    },
+    {
+      "id": 2,
+      "name": "Yoga Mat",
+      "description": "Anti-slip yoga mat made from eco-friendly material.",
+      "price": "$24.99",
+      "stock": 2,
+      "return_policy": 1,
+      "category": "Yoga"
+    },
+    {
+      "id": 3,
+      "name": "Fitness Resistance Bands",
+      "description": "Set of 5 resistance bands for strength training.",
+      "price": "$14.99",
+      "stock": 3,
+      "return_policy": 1,
+      "category": "Fitness"
+    },
+    {
+      "id": 4,
+      "name": "Running Shoes",
+      "description": "Lightweight running shoes with cushioned soles.",
+      "price": "$49.99",
+      "stock": 1,
+      "return_policy": 2,
+      "category": "Running"
+    },
+    {
+      "id": 5,
+      "name": "Water Bottle",
+      "description": "Insulated water bottle to keep drinks cool.",
+      "price": "$12.99",
+      "stock": 2,
+      "return_policy": 2,
+      "category": "Running"
+    },
+    {
+      "id": 6,
+      "name": "Sports Backpack",
+      "description": "Durable backpack with multiple compartments for gear.",
+      "price": "$34.99",
+      "stock": 3,
+      "return_policy": 1,
+      "category": "Running"
+    },
+    {
+      "id": 7,
+      "name": "Yoga Blocks",
+      "description": "Set of two foam blocks for yoga and stretching exercises.",
+      "price": "$9.99",
+      "stock": 1,
+      "return_policy": 1,
+      "category": "Yoga"
+    },
+    {
+      "id": 8,
+      "name": "Elastic Yoga Bands",
+      "description": "High-quality elastic bands for yoga and flexibility training.",
+      "price": "$16.99",
+      "stock": 2,
+      "return_policy": 2,
+      "category": "Yoga"
+    },
+    {
+      "id": 9,
+      "name": "Anti-Slip Yoga Towel",
+      "description": "Microfiber towel with anti-slip backing for yoga mats.",
+      "price": "$18.99",
+      "stock": 3,
+      "return_policy": 1,
+      "category": "Yoga"
+    },
+    {
+      "id": 10,
+      "name": "Swimming Goggles",
+      "description": "Professional swimming goggles with anti-fog coating.",
+      "price": "$15.99",
+      "stock": 1,
+      "return_policy": 1,
+      "category": "Swimming"
+    }
+  ]
+}
