@@ -1,0 +1,38 @@
+service: finetuning-chatbot
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+
+custom:
+  region: eu-central-1
+  datasetBucket: finetune-dataset-20250127
+  processedBucket: processed-dataset-20250127
+
+plugins:
+  - serverless-python-requirements
+
+functions:
+  preprocessDataset:
+    handler: handlers/preprocess_dataset.handler
+    environment:
+      PROCESSED_BUCKET_NAME: ${self:custom.datasetBucket}
+    events:
+      - s3:
+          bucket: ${self:custom.datasetBucket}
+          event: s3:ObjectCreated:*
+    role: !GetAtt LambdaExecutionRolePreprocess.Arn
+
+resources:
+  - ${file(resources/iam-roles.yml)}
+
+package:
+  individually: true
+  exclude:
+    - "*.json"
+    - "node_modules/**"
+    - ".serverless/**"
+    - ".git/**"
+    - "env/**"
